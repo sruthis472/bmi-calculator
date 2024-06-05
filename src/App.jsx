@@ -95,11 +95,11 @@ function App() {
     <div className='d-flex justify-content-center align-items-center ' style={{width:'100%',height:'100vh'}}>
         <div className='bg-light p-3 rounded d-flex justify-content-center align-items-center flex-column bg-dark border border-primary ' style={{width:'450p'}}>
           <h1 className='text-center text-light mt-2'>BMI Calculator</h1>
-          <div className='mt-2 rounded shadow  text-light p-3' style={{width:'380px',backgroundColor:'rgb(50,100,225)'}}>
+          <div className='mt-2 rounded shadow  text-light p-2' style={{width:'380px',backgroundColor:'rgb(50,100,225)'}}>
             <p className='text-center' style={{fontSize:'17px'}}><FontAwesomeIcon icon={faQuoteLeft} /> Body mass index (BMI) is a measure of body fat based on height and weight that applies to adult men and women.  <FontAwesomeIcon icon={faQuoteRight} /></p>
           </div>
         
-          <h5 className='text-center text-light mt-3'>{heading}</h5>
+          <h5 className='text-center text-light mt-2'>{heading}</h5>
           <div className='rslt mt-3 border border-primary' style={{width:'190px',height:'190px', borderRadius:'50%',background: 'radial-gradient(circle, white 0%,rgb(60,100,225) 100%)'}}>
             <p className='text-center mt-4 fs-5 fw-bold'>{heading1}</p>
             <h5 className='text-center mt-4 fs-5 fw-bold'>{heading2}</h5>
@@ -157,7 +157,7 @@ function App() {
            />
            {!isHeight &&<p className='text-danger'>*invalid input</p>}
             </div>
-            <div className="mt-4 mb-3 d-flex justify-content-between">
+            <div className="mt-4 mb-2 d-flex justify-content-between">
             <Button variant="contained"  color="primary" style={{width:'160px',height:'40px',color:'white'}} onClick={calculateBmi} disabled={isWeight&&isHeight?false:true} >Calculate</Button>
             <Button  variant="outlined" style={{width:'160px',height:'40px'}} onClick={handleReset} >Reset</Button>
             </div>
